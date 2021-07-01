@@ -23,4 +23,4 @@ steps:
     azureSubscription: 'Azure Pass - Sponsorship(ccf64fef-5be7-4734-bfea-744554fdade5)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az group create -l $(LOCATION) -n fabmedical-$(SUFFIX)'
+    inlineScript: 'az group create -l $(LOCATION) -n fabmedical-$(SUFFIX)2'
