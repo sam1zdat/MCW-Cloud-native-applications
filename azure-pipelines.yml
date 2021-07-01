@@ -24,3 +24,8 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az group create -l $(LOCATION) -n fabmedical-$(SUFFIX)2'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(build.sourcesdirectory)/Hands-on lab/arm/'
+    Contents: '*.json'
+    TargetFolder: '$(build.artifactstagingdirectory)'
